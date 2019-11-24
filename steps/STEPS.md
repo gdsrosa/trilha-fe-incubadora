@@ -1,5 +1,36 @@
 # React Development ENV
 
+### TL-DR
+
+#### Installation of NodeJS and NPM
+
+### Install NVM
+```
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.1/install.sh | bash
+```
+#### Export NVM variable on your terminal profile like `~/.bash_profile, ~/.zshrc, ~/.profile, or ~/.bashrc.`
+```
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+```
+
+#### Check NVM installation 
+```
+command -v nvm
+```
+
+### Install latest LTS Node version
+```
+nvm install 12.13.1
+```
+### Or current Node version
+```
+nvm install node # "node" is an alias for the latest version
+```
+___
+
+
+
 ## 1. Tools for project standards
 
   - ### ESlint

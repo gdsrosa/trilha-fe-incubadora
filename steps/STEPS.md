@@ -148,6 +148,26 @@ const path = require('path');
   },
 });
 ```
+
+# Scripts
+
+## Add Webpack Scripts
+```
+"scripts": {
+  "webpack": "webpack",
+  "webpack-dev-server": "webpack-dev-server",
+}
+```
+
+## Add ENV Scripts
+```
+"scripts": {
+  "build": "npm run webpack -- --env.mode production",
+  "dev": "npm run webpack-dev-server -- --env.mode development --open",
+}
+```
+
+
 ## Answers to possible questions, but you should explain right away
 
   - **Module.exports** - Same as `export default` from Javascript, you don't have to named and when you import in another file you can name whatever you want.

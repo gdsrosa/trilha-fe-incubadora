@@ -9,13 +9,13 @@
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.1/install.sh | bash
 ```
 #### Export NVM variable on your terminal profile like `~/.bash_profile, ~/.zshrc, ~/.profile, or ~/.bashrc.`
-```
+```bash
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 ```
 
 #### Check NVM installation 
-```
+```bash
 command -v nvm
 ```
 
@@ -50,7 +50,7 @@ ___
 
   ### Create Prettier file (.prettierrc) with the following config:
   
-```
+```json
 {
   "trailingComma": "es5",
   "tabWidth": 2,
@@ -121,7 +121,7 @@ npm install --save-dev file-loader
 ```touch .babelrc```
 
   With the following config
-  ```
+  ```json
   {
     "presets": ["@babel/preset-env", "@babel/preset-react"],
     "plugins": ["@babel/plugin-transform-runtime"]
@@ -145,7 +145,7 @@ const path = require('path');
 
 ### 3. Start the configuration itself
 
-```
+```javascript
   module.exports = ({ mode }) => ({
   mode,
   entry: './src/index.js',
@@ -197,7 +197,7 @@ const path = require('path');
 # Scripts
 
 ## Add Webpack Scripts
-```
+```json
 "scripts": {
   "webpack": "webpack",
   "webpack-dev-server": "webpack-dev-server",
@@ -205,7 +205,7 @@ const path = require('path');
 ```
 
 ## Add ENV Scripts
-```
+```json
 "scripts": {
   "build": "npm run webpack -- --env.mode production",
   "dev": "npm run webpack-dev-server -- --env.mode development --open",
@@ -219,15 +219,15 @@ const path = require('path');
   - **Arrow Function** - Regular function, same as `function x() {}`
   - **Destructuring** - I can access attributes from the objects like
     
-    ``` 
+    ```javascript 
     const obj = {x: 12, y: 42};
-    let { x, y} = obj
+    let { x, y } = obj
     
     console.log(x) // 12
     console.log(y) // 42
     ```
   - **Path** - Path is the the object thats NodeJS has to handle the our O.S dirs
   - **Implicit Return** - Mostly used in arrow functions situations
-  ```
+  ```javascript
     const sum = (x, y) => x + y
   ```

@@ -40,19 +40,21 @@
 
 ### Babel
 
-```npm install```
+```
+npm install --save-dev @babel/core @babel/preset-env @babel/preset-react @babel/plugin-transform-runtime babel-eslint
+```
 
 ### Style Loaders
 
-```npm install --save-dev --save-exact prettier```
+```
+npm install --save-dev css-loader sass-loader node-sass style-loader
+```
 
 ### File Loader
 
-```npm install --save-dev --save-exact prettier```
-
-### HTML Plugin
-
-```npm install --save-dev --save-exact prettier```
+```
+npm install --save-dev file-loader
+```
 
 ## 3. Webpack
   ### Packages
@@ -67,24 +69,36 @@
 
   ## Installation
   
-  ### Babel
+  ### Webpack
 
-  `npm install`
-
-  ### Style Loaders
-
-  ```npm install --save-dev --save-exact prettier```
-
-  ### File Loader
-
-  ```npm install --save-dev --save-exact prettier```
+  ```
+  npm install --save-dev webpack webpack-dev-server webpack-cli
+  ```
 
   ### HTML Plugin
 
-  ```npm install --save-dev --save-exact prettier```
-
+  ```
+  npm install --save-dev html-webpack-plugin
+  ```
 
 # Configuration
+
+## Babel
+
+### 1. Create babel file (.babelrc) 
+
+```touch .babelrc```
+
+  With the following config
+  ```
+  {
+    "presets": ["@babel/preset-env", "@babel/preset-react"],
+    "plugins": ["@babel/plugin-transform-runtime"]
+  }
+  ```
+
+
+## Webpack
 
 ### 1. Create the `webpack.config` file
 

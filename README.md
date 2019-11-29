@@ -1,39 +1,43 @@
-# Trilha FrontEnd Incubadora Invillia
+# Mini Workshop FrontEnd Incubadora Invillia
 
-## Diretórios
+## Directories
 
-**Steps** - Passo a passo de como montar o boilerplate
+**Steps** - A step by step on how you can create a boilerplate
 
-**Boilerplate** - Aplicação pronta pra codificar com React
+**Boilerplate** - The boilerplate application itself
 
+## In case you guys want to run the project on your machine
 
-## Caso queiram executar o projeto *Boilerplate* na maquina de vocês
+#### Obs: Make sure that Node and NPM are installed on your machine.
 
-####  Obs: Para o passo a passo abaixo funcionar tenha certeza que o NodeJS e o NPM estão instalados na máquina.
-
-Clone este repositório:
+Clone this repo:
 
 ```
 git clone https://github.com/gdsrosa/trilha-fe-incubadora
 ```
 
-Entrem dentro do diretório **trilha-fe-incubadora**:
+Change to the **trilha-fe-incubadora** directory:
+
 ```
 cd trilha-fe-incubadora/
 ```
-E depois entrem no diretório **boilerplate**:
+
+And then to **boilerplate**:
 
 ```
 cd boilerplate/
 ```
-No diretório **boilerplate** instalem as dependências do projeto:
+
+On **boilerplate** install all the project dependencies:
+
 ```
 npm install
 ```
 
-Para rodar em modo de desenvolvimento usem o seguinte comando:
+Finally, to run the project on dev mode run the command below
+
 ```
 npm run dev
 ```
 
-Feito!
+Done!
